@@ -118,7 +118,7 @@ Aiming at classifying URLs in a given context, we define two subtasks leveraging
 ::right::
 
 <!--div class="b-container" -->
-<img v-click src="/README_example.PNG" width="100%" height="100%">
+<img v-click src="/README_example.png" width="100%" height="100%">
 
 <arrow v-click="3" x1="500" y1="440" x2="650" y2="245" color="#564" width="2" arrowSize=".5" />
 
@@ -321,7 +321,7 @@ hide: false
 ---
 <div container align="center">
     <div item>
-        <img src="/DL4KG-parsing.PNG" width="65%">
+        <img src="/DL4KG-parsing.png" width="65%">
     </div>
     <div text-xl>
         <carbon:arrow-up /> LLM output string parsing statistics. 
@@ -340,7 +340,7 @@ hide: false
 # Results
 
 <div container align="center">
-    <img src="/DL4KG-E+CL.PNG" width="75%" height="75%">
+    <img src="/DL4KG-E+CL.png" width="75%" height="75%">
     <div text-xl>
         <carbon:arrow-up />Performance on the E+CL subtask. P and R represent precision and recall ;<br> b refers to the binary results (whether the URLs are related to datasets). 
     </div>
@@ -397,7 +397,7 @@ Here is the list of citations mentioned in the presentation.
 
 ---
 layout: dynamic-side-image
-image: images/README_example.PNG
+image: images/README_example.png
 equal: false
 hide: true
 ---
