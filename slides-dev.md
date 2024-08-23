@@ -54,7 +54,7 @@ transition: fade-out
 <h1>Motivation</h1>
 ::left::
   <h2 center>Knowledge Graph Construction</h2>
-  <img src="/knowledge-graph.png" width="100" height="100"/>
+  <img src="./knowledge-graph.png" width="100" height="100"/>
   <p>Knowledge graph construction is a vital task across diverse domains for organizing entities and their relations.</p>
 
   - Tasks involved in KG population include:
@@ -118,7 +118,7 @@ Aiming at classifying URLs in a given context, we define two subtasks leveraging
 ::right::
 
 <!--div class="b-container" -->
-<img v-click src="/README_example.PNG" width="100%" height="100%">
+<img v-click src="./README_example.PNG" width="100%" height="100%">
 
 <arrow v-click="3" x1="500" y1="440" x2="650" y2="245" color="#564" width="2" arrowSize=".5" />
 
@@ -216,8 +216,7 @@ zoom: 1
 We use **LLaMA 2** , **Mistral 7B** and their quantized 4-bit models for each task. 
 For each task, we apply **static** and **dynamic** demonstration settings, where the demonstrations in static setting are fixed and selected according to *context similarity* in dynamic setting.
 ::left::
-<!--div class="overflow-auto max-h-160 max-w-140"-->
-<div col-1 gap-1 mt-4>
+<div class="overflow-auto max-h-160 max-w-140">
 Prompt for E+CL task: 
 ```ts {3,10,11,15,16} {lines:true, maxHeight:'100px'}
 <s>[INST]<<sys>>You act as a human annotator. First read the instructions and given examples, then only annotate the last given input accordingly without extra words. Your annotation has to use valid JSON syntax.<</sys>>
@@ -316,40 +315,23 @@ hide: true
 transition: slide-left
 
 ---
+src: pages/parsing-statistics.md
 class: center
 hide: false
----
-<div container align="center">
-    <div item>
-        <img src="/DL4KG-parsing.PNG" width="65%">
-    </div>
-    <div text-xl>
-        <carbon:arrow-up /> LLM output string parsing statistics. 
-        <br>
-        The generation output parsing ratio for fewshot setting are all > 85%. 
-    </div>
-</div>
 
 
 ---
 transition: slide-left
 
 ---
+src: pages/E+CL-results.md
 hide: false
 ---
-# Results
 
-<div container align="center">
-    <img src="/DL4KG-E+CL.PNG" width="75%" height="75%">
-    <div text-xl>
-        <carbon:arrow-up />Performance on the E+CL subtask. P and R represent precision and recall ;<br> b refers to the binary results (whether the URLs are related to datasets). 
-    </div>
-
-</div>
 
 ---
 src: pages/CL-results.md
-hide: true
+hide: false
 ---
 
 ---
@@ -375,7 +357,7 @@ class: text-center
 ---
 
 <div class="center">
-<img src="/DL4KG_QR.png" width="20%" class="center">
+<img src="./DL4KG_QR.png" width="20%" class="center">
 <AutoFitText :max="60" :min="60" modelValue="Q&A"/>
 </div>
 
