@@ -1,7 +1,7 @@
 # Results
 
 <div container align="center">
-    <img src="../DL4KG-E+CL.png" width="75%" height="75%">
+    <img src="/DL4KG-E+CL.png" width="75%" height="75%">
     <div text-xl>
         <carbon:arrow-up />Performance on the E+CL subtask. P and R represent precision and recall ;<br> b refers to the binary results (whether the URLs are related to datasets). 
     </div>

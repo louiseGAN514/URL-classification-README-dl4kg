@@ -4,7 +4,7 @@
 
 <div container align="center">
     <div item>
-        <img src="../DL4KG-parsing.png" width="65%">
+        <img src="/DL4KG-parsing.png" width="65%">
     </div>
     <div text-xl>
         <carbon:arrow-up /> LLM output string parsing statistics. 

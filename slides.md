@@ -53,8 +53,8 @@ transition: fade-out
 
 <h1>Motivation</h1>
 ::left::
-  <h3 center>Knowledge Graph Construction</h3>
-  <img src="/knowledge-graph.png" width="80" height="80"/>
+  <h2 center>Knowledge Graph Construction</h2>
+  <img src="/knowledge-graph.png" width="100" height="100"/>
   <p>Knowledge graph construction is a vital task across diverse domains for organizing entities and their relations.</p>
 
   - Tasks involved in KG population include:
@@ -68,13 +68,15 @@ transition: fade-out
 
 
 ::right::
-  <h3>Dataset and Software Discovery</h3>
+  <h2>Dataset and Software Discovery</h2>
   <p>Scholarly artifacts such as datasets and software are important to progress research reproducibility. </p> 
 
   - Lack of standardization in releasing research related software and datasets 
   - Overlooking resources like **datasets** and **software** linked to research papers
   - In addition to research papers, research-related webpages can also serve the same purpose, e.g. GitHub repositories.
 
+  <br>
+  <br>
   <br>
   <br>
   <div class="m-10 overflow-auto max-h-160 max-w-140">
@@ -122,7 +124,9 @@ Aiming at classifying URLs in a given context, we define two subtasks leveraging
 
 <p v-click>The URL <code>https://github.com/acl-org/acl-anthology</code> is one example to be classified in our <span v-mark.red="3">tasks</span>. </p>
 
-<!--/div-->
+<!--
+/div
+-->
 
 ---
 layout: default
@@ -215,7 +219,6 @@ We use **LLaMA 2** , **Mistral 7B** and their quantized 4-bit models for each ta
 For each task, we apply **static** and **dynamic** demonstration settings, where the demonstrations in static setting are fixed and selected according to *context similarity* in dynamic setting.
 ::left::
 <div class="overflow-auto max-h-160 max-w-140">
-<!--div col-1 gap-1 mt-4-->
 Prompt for E+CL task: 
 ```ts {3,10,11,15,16} {lines:true, maxHeight:'100px'}
 <s>[INST]<<sys>>You act as a human annotator. First read the instructions and given examples, then only annotate the last given input accordingly without extra words. Your annotation has to use valid JSON syntax.<</sys>>
@@ -314,45 +317,24 @@ hide: true
 transition: slide-left
 
 ---
+src: pages/parsing-statistics.md
 class: center
 hide: false
----
-# Results
-
-<div container align="center">
-    <div item>
-        <img src="/DL4KG-parsing.png" width="65%">
-    </div>
-    <div text-xl>
-        <carbon:arrow-up /> LLM output string parsing statistics. 
-        <br>
-        The generation output parsing ratio for fewshot setting are all > 85%. 
-    </div>
-</div>
 
 
 ---
 transition: slide-left
 
 ---
-class: center
+src: pages/E+CL-results.md
 hide: false
 ---
-# Results
 
-<div container align="center">
-    <img src="/DL4KG-E+CL.png" width="75%" height="75%">
-    <div text-xl>
-        <carbon:arrow-up />Performance on the E+CL subtask. P and R represent precision and recall ;<br> b refers to the binary results (whether the URLs are related to datasets). 
-    </div>
-
-</div>
 
 ---
 src: pages/CL-results.md
-hide: true
+hide: false
 ---
-
 
 ---
 layout: center
@@ -399,7 +381,7 @@ Here is the list of citations mentioned in the presentation.
 
 ---
 layout: dynamic-side-image
-image: images/README_example.png
+image: images/README_example.PNG
 equal: false
 hide: true
 ---
