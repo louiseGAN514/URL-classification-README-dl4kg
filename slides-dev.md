@@ -118,13 +118,15 @@ Aiming at classifying URLs in a given context, we define two subtasks leveraging
 ::right::
 
 <!--div class="b-container" -->
-<img v-click src="./README_example.PNG" width="100%" height="100%">
+<img v-click src="./README_example.png" width="100%" height="100%">
 
 <arrow v-click="3" x1="500" y1="440" x2="650" y2="245" color="#564" width="2" arrowSize=".5" />
 
 <p v-click>The URL <code>https://github.com/acl-org/acl-anthology</code> is one example to be classified in our <span v-mark.red="3">tasks</span>. </p>
 
-<!--/div-->
+<!--
+/div
+-->
 
 ---
 layout: default

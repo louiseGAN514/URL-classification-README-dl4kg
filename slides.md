@@ -53,8 +53,8 @@ transition: fade-out
 
 <h1>Motivation</h1>
 ::left::
-  <h2 center>Knowledge Graph Construction</h2>
-  <img src="/knowledge-graph.png" width="100" height="100"/>
+  <h3 center>Knowledge Graph Construction</h3>
+  <img src="/knowledge-graph.png" width="80" height="80"/>
   <p>Knowledge graph construction is a vital task across diverse domains for organizing entities and their relations.</p>
 
   - Tasks involved in KG population include:
@@ -68,15 +68,13 @@ transition: fade-out
 
 
 ::right::
-  <h2>Dataset and Software Discovery</h2>
+  <h3>Dataset and Software Discovery</h3>
   <p>Scholarly artifacts such as datasets and software are important to progress research reproducibility. </p> 
 
   - Lack of standardization in releasing research related software and datasets 
   - Overlooking resources like **datasets** and **software** linked to research papers
   - In addition to research papers, research-related webpages can also serve the same purpose, e.g. GitHub repositories.
 
-  <br>
-  <br>
   <br>
   <br>
   <div class="m-10 overflow-auto max-h-160 max-w-140">
@@ -216,8 +214,8 @@ zoom: 1
 We use **LLaMA 2** , **Mistral 7B** and their quantized 4-bit models for each task. 
 For each task, we apply **static** and **dynamic** demonstration settings, where the demonstrations in static setting are fixed and selected according to *context similarity* in dynamic setting.
 ::left::
-<!--div class="overflow-auto max-h-160 max-w-140"-->
-<div col-1 gap-1 mt-4>
+<div class="overflow-auto max-h-160 max-w-140">
+<!--div col-1 gap-1 mt-4-->
 Prompt for E+CL task: 
 ```ts {3,10,11,15,16} {lines:true, maxHeight:'100px'}
 <s>[INST]<<sys>>You act as a human annotator. First read the instructions and given examples, then only annotate the last given input accordingly without extra words. Your annotation has to use valid JSON syntax.<</sys>>
@@ -319,6 +317,8 @@ transition: slide-left
 class: center
 hide: false
 ---
+# Results
+
 <div container align="center">
     <div item>
         <img src="/DL4KG-parsing.png" width="65%">
@@ -335,6 +335,7 @@ hide: false
 transition: slide-left
 
 ---
+class: center
 hide: false
 ---
 # Results
@@ -351,6 +352,7 @@ hide: false
 src: pages/CL-results.md
 hide: true
 ---
+
 
 ---
 layout: center
