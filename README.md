@@ -1,11 +1,6 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# DL4KG'24 -- Hidden Entity Detection from GitHub Leveraging Large Language Models
 
-To start the slide show:
+This repository host the interactive slides based on [Slidev](https://sli.dev) for our paper *Hidden Entity Detection from GitHub Leveraging Large Language Models*, accepted at DL4KG workshop, colocated at KDD 2024. 
 
-- `npm install`
-- `npm run dev`
-- visit <http://localhost:3030>
+To visualize the slides properly, please set the default font size to `12`, and the recommended font to `DejaVu Serif`. 
 
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev at the [documentation](https://sli.dev/).
