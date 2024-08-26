@@ -3,7 +3,7 @@
 theme: academic
 layout: cover
 coverBackgroundUrl: /GESIS-background.png
-coverDate: 25/08/2024
+coverDate: 26/08/2024
 
 title: Hidden Entity Detection from GitHub Leveraging Large Language Models
 info: |
@@ -181,6 +181,8 @@ After the context extraction, each URL with the given context is manually labele
 
 </v-click>
 
+<v-click>In total, we obtain 120 <em>Dataset Direct Link</em>, 678 <em>Dataset Landing Page</em>, 355 <em>Software</em> and 286 <em>Other</em> URLs. 
+</v-click>
 
 <!-- Footer -->
 [^1]: [unarXiv corpus on GitHub](https://github.com/IllDepence/unarXive)
